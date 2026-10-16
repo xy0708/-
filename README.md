@@ -2,6 +2,8 @@
 
 本仓库只保留“手表 → Android 手机 → RK3576 Android 开发板 → 手机显示”联调所需的源码、协议、测试和离线 ASR 资产。它是私有工程交接仓库，不是正式上线版本。
 
+> 当前 GitHub 交付为 `family-health-edge-integration-source-lite.zip`：包含联调源码与配置，但不包含 ONNX/RKNN/TFLite 等大模型权重、字体和历史文档。周末可先完成手表—手机—开发板协议与网络链路；模型权重需线下或对象存储单独交付后再做完整推理验收。
+
 ## 目录
 
 - `phone-app/`：手机 Flutter APP。已接入健康、OCR、ASR 的端侧客户端与页面。
@@ -35,4 +37,5 @@ powershell -ExecutionPolicy Bypass -File .\tools\restore_asr_assets.ps1
 ## 不在仓库中的内容
 
 虚拟环境、Gradle/Flutter 缓存、构建目录、训练数据、历史对比模型、重复 ZIP/APK、真实健康数据及厂家 SDK 二进制未上传。厂家 SDK 请按 `VENDOR_SDK_SETUP.md` 从原始仓库获取并核验版本。
+
 
